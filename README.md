@@ -1,6 +1,6 @@
 # BasicsIntro
-Some basic codes for practice\n
-Random codes \n
-1 prints a rhombus of different sizes\n
-2 simple RockPaperScissors game\n
-I'll add more stuff later\n
+Some basic codes for practice
+Random codes 
+1 prints a rhombus of different sizes
+2 simple RockPaperScissors game
+I'll add more stuff later
