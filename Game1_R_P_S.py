@@ -1,13 +1,14 @@
+####Rock Paper Scissors game
 import random as r
 import re
 print("Hi, um how do you want me to address you?")
 player_name=""
-player_name=input("Your name please:\n  ")
+player_name=input("Your name please:\n ")
 
-print("Hey! "+player_name+"😁👋 \nThis is a Rock Paper Scissors interactive game\nInstructions: type any of these three hand signs for your turn, I will immediately spawn my move, I promise there's not cheating lol ")
-print("\nType either \nRock or rock or stone or just R or r ✊ ")
-print("\nPaper or p or P 📄📃")
-print("\nScissors or s or S ✂")
+print("\nHey! "+player_name+"  🙂👋 \nThis is a Rock Paper Scissors interactive game\nInstructions: type any of these three hand signs for your turn, I will immediately spawn my move,\n ")
+print("Type either \nRock or rock or stone or just R or r ✊ ")
+print("Paper or p or P   📄📃")
+print("Scissors or s or S ✂")
 print("Rules: you know them already lol")
 input()
 print("JK, rock beats scissors, paper beats rock, scissors beats paper\n**dont ask me why**🤭")
@@ -16,8 +17,15 @@ score =0
 player_score=0
 pybot_score=0
 moves={ 1:"rock✊✊✊", 2:"paper📄📄📄", 3:"scissors✂✂✂"}
-def scored_as(p_move, b_move):
-    if(p_move==b_move ): return 0
+def scored_as(p, b):
+    if(p==b ): return 0
+    elif(p==1 and b==3):return 1 #player rock, bot scis WON
+    elif(b==1 and p==3):return -1 # player sci, bot rock LOST
+    elif(p==2 and b==3):return -1 #p paper, bot sci LOST
+    elif(b==2 and p==3):return 1 #player sci, bot paper WON
+    elif(p==1 and b==2):return -1 #player rock, bot paper Lost
+    elif(b==1 and p==2):return 1 #player paper, bot rock WON
+#rules to win completed
 flag=True
 
 #script to display the player as winner
@@ -53,7 +61,7 @@ while flag: # stops when user wants
     print("========================\nIts your turn now, so what's your move:🤔\n  ")
     player_move=input(":\n")
     if(player_move.lower()=='q' or player_move.lower()=="stop" or player_move.lower()=="no"):
-        print("\n\nOh!, so soon?\nHave a great day😊😄✊📄✂\n")
+        print("\n\nOh!, so soon?\nHave a great day    😊😄✊📄✂\n")
         break
     moves=[ ["rock","stone", "r"], ["paper","p"] , ["scissors", "s"] ]
     for x in moves:
