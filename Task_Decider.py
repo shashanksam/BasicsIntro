@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ Don't know what to decide? use this to make up your mind"""
 import random as r
 
