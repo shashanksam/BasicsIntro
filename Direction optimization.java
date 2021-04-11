@@ -48,3 +48,14 @@ class GFG
 }
 
 // This code is contributed by ssam
+/*Input:
+NWSSEWSNWSSNNEEWS
+Output:
+SSW
+
+
+Input:
+NNEWS
+Output:
+N
+*/
