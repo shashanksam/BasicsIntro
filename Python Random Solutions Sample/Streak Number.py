@@ -22,7 +22,7 @@ E=ΣNj where Nj represents the digit at even position
 Streak(S)=k where S is O+E and k is the smallest whole number when S+k is not divisible by k+1
 Input Format
 
- 
+  
 
 Read the input from standard input stream
 
